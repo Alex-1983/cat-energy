@@ -15,27 +15,40 @@
   </head>
 
   <body>
+
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <div class="page__inner">
-      <div class="page__content">
-        <!-- page-header -->
-        <include src="source/templates/header.html"></include>
-        <main class="main">
-          <!-- intro -->
-          <include src="source/templates/intro.html"></include>
-          <!-- product -->
-          <include src="source/templates/product.html"></include>
-          <!-- features -->
-          <include src="source/templates/features.html"></include>
-        </main>
-      </div>
 
-    </div>
+    <header class="header container">
+      <include src="source/templates/nav.html"></include>
+    </header>
+
+    <main class="main">
+      <!-- intro -->
+      <include src="source/templates/intro.html"></include>
+      <!-- product -->
+      <include src="source/templates/product.html"></include>
+      <!-- features -->
+      <include src="source/templates/features.html"></include>
+      <!-- example -->
+      <include src="source/templates/example.html"></include>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-contact__wrapper">
+        <!-- footer-contact -->
+        <include src="source/templates/footer-contact.html"></include>
+      </div>
+      <!-- footer-map -->
+      <include src="source/templates/footer-map.html"></include>
+      <!-- footer-bottom -->
+      <include src="source/templates/footer-bottom.html"></include>
+    </footer>
 
     <script src="libs_js/picturefill.min.js"></script>
     <script src="js/app.min.js"></script>
+
   </body>
 
 </html>

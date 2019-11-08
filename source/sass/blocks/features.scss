@@ -1,28 +1,23 @@
 .features {
-  margin-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto 40px;
 
-  width: 100%;
+  width: 87.5%;
+
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-bottom: 45px;
     padding-bottom: 55px;
 
-    border-bottom: 1px solid #e6e6e6;
+    width: 92.1%;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
 
     width: 1300px;
-
-    border-bottom: none;
   }
 }
 
@@ -135,13 +130,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 87px;
+    margin-bottom: 130px;
     margin-right: 66px;
     padding-top: 111px;
     padding-left: 0;
 
     width: 45%;
-    min-height: 230px;
+    min-height: 115px;
 
     &::before {
       width: 80px;

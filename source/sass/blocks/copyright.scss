@@ -1,0 +1,42 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+
+    padding: 0;
+  }
+}
+
+.copyright__text {
+  margin-top: 10px;
+
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    letter-spacing: -0.3px;
+  }
+}
+
+.copyright__link {
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+}
+
+.copyright__icon {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+}
