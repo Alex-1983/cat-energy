@@ -12,6 +12,20 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.wrapper {
-  margin: 0 auto;
+.btn {
+  display: block;
+
+  margin: 0;
+  padding: 10px 20px;
+
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  color: $white;
+  background-color: $green;
+  text-align: center;
 }

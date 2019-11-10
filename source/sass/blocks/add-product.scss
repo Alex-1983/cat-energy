@@ -1,0 +1,67 @@
+.add-product {
+  padding: 0 20px 38px;
+
+  width: 100%;
+}
+
+.add-product__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.add-product__card-container {
+  margin-bottom: 35px;
+}
+
+.add-product__img {
+  position: relative;
+  display: block;
+
+  width: 100%;
+  min-height: 289px;
+
+  background-color: $green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
+.add-product__text {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 190px;
+
+  width: 165px;
+
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 65px;
+    left: 50%;
+
+    margin-left: -27px;
+    display: block;
+    width: 55px;
+    height: 60px;
+    background: url("../img/icon-gift.svg") no-repeat;
+  }
+}

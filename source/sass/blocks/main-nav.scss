@@ -7,6 +7,7 @@
   padding: 0;
 
   width: 100%;
+  max-width: 1300px;
 
   font-family: $font-family;
   font-weight: 400;
@@ -21,15 +22,13 @@
     display: flex;
     flex-wrap: wrap;
 
-    padding: 20px 30px 0;
+    padding: 25px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
+    padding-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
-
-    width: 1300px;
   }
 }
 
@@ -54,14 +53,18 @@
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 0;
+
+    border: none;
   }
 }
 
 .main-nav__logo {
+  display: block;
+  margin: 0;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 5px;
-    left: 0;
+    margin-top: 3px;
 
     width: 173px;
     height: 58px;
@@ -78,9 +81,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 35px;
-    left: 0;
-
     width: 202px;
     height: 59px;
   }

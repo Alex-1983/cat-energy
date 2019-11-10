@@ -1,14 +1,15 @@
 .features {
   margin: 0 auto 40px;
+  padding: 0 20px;
 
-  width: 87.5%;
-
+  width: 100%;
+  max-width: 1300px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
     padding-bottom: 55px;
-
-    width: 92.1%;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,8 +17,6 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 50px;
-
-    width: 1300px;
   }
 }
 
