@@ -33,7 +33,7 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 
     width: 100%;
   }
@@ -89,6 +89,36 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: left;
+
+  &--last {
+    position: relative;
+
+    margin: 0 auto 5px;
+    padding-top: 80px;
+
+    width: 210px;
+    text-align: center;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 50%;
+
+      margin-left: -15px;
+
+      width: 30px;
+      height: 2px;
+
+      background-color: #d3d3d3;
+    }
+
+    &::after {
+      transform: rotate(-90deg);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -97,11 +127,27 @@
 
     width: 140px;
 
-
     font-size: 20px;
     line-height: 20px;
-
     text-align: center;
+
+    &--last {
+      margin-bottom: 30px;
+      padding-top: 80px;
+
+      width: 145px;
+
+      font-size: 20px;
+
+      &::before,
+      &::after {
+        top: 0;
+
+        margin-left: -30px;
+
+        width: 60px;
+      }
+    }
   }
 }
 
@@ -111,27 +157,10 @@
 
 .card__buy-container {
   width: 100%;
+
   @media (min-width: $tablet-width) {
     padding: 0 36px 40px;
   }
-}
-
-.card__buy {
-  display: block;
-
-  margin: 0;
-  padding: 10px 20px;
-
-  width: 100%;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-
-  color: $white;
-  background-color: $green;
-  text-align: center;
 }
 
 .table-card {
@@ -175,11 +204,23 @@
 
   text-align: center;
 
+  &--last {
+    margin-bottom: 22px;
+
+    color: $text-color;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     display: block;
     width: 175px;
     font-size: 16px;
+
+    &--last {
+      margin-bottom: 86px;
+
+      width: 200px;
+    }
   }
 }
 
@@ -201,8 +242,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 83px;
+    padding: 0;
     padding-top: 83px;
-    padding-bottom: 40px;
 
     width: 100%;
 
@@ -213,99 +254,22 @@
   }
 }
 
-.card-last__title {
-  position: relative;
-  display: block;
-  margin: 0 auto 5px;
-  padding-top: 80px;
-
-  width: 210px;
-
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-
-  text-align: center;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 40px;
-    left: 50%;
-
-    margin-left: -15px;
-
-    width: 30px;
-    height: 2px;
-
-    background-color: #d3d3d3;
-  }
-
-  &::after {
-    transform: rotate(-90deg);
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
-
-    width: 145px;
-
-    font-size: 20px;
-
-    &::before,
-    &::after {
-      top: 0;
-
-      margin-left: -30px;
-
-      width: 60px;
-    }
-  }
-}
-
-.card-last__text {
-  margin: 0;
-  margin-bottom: 22px;
-  padding: 0;
-
-  font-family: $font-family-secondary;
-  font-size: 12px;
-  line-height: 16px;
-  color: $text-color;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 86px;
-
-    width: 200px;
-
-    font-size: 16px;
-  }
-}
-
-.card-last__title-link {
-  color: $black;
-}
-
 .card-last__buy-container {
   width: 100%;
 }
 
 .card-last__buy {
-  display: block;
-
-  margin: 0;
-  padding: 10px 20px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
   background-color: $grey-100;
   color: $text-color;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 
   @media (min-width: $desktop-width) {
     width: 170px;

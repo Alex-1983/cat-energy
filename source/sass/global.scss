@@ -15,7 +15,7 @@ input[type="radio"].visually-hidden {
 .btn {
   display: block;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 10px 20px;
 
   width: 100%;
@@ -28,4 +28,14 @@ input[type="radio"].visually-hidden {
   color: $white;
   background-color: $green;
   text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

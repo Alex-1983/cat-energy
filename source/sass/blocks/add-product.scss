@@ -1,21 +1,79 @@
-.add-product {
+.add-product__row {
   padding: 0 20px 38px;
 
   width: 100%;
+
+  max-width: 1300px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .add-product__title {
+  position: relative;
+  display: inline-flex;
+  text-align: center;
+
   margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
+  margin-bottom: 35px;
+  padding: 0 20px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: calc(100% + 3px);
+    width: 100vw;
+    height: 3px;
+    background-color: $green;
+    display: inline-flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    padding-top: 0;
+    padding-left: 65px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 93%;
+      width: 100vw;
+      height: 3px;
+      background-color: $green;
+      display: inline-flex;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: calc(100% + 17px);
+      width: 100vw;
+      height: 3px;
+      background-color: $green;
+    }
+  }
 }
 
-.add-product__card-container {
+.add-product__list {
+  margin: 0;
   margin-bottom: 35px;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .add-product__img {
@@ -34,6 +92,33 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 65px;
+    left: 50%;
+
+    margin-left: -27px;
+    display: block;
+    width: 55px;
+    height: 60px;
+    background: url("../img/icon-gift.svg") no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+
+    &::before {
+      left: 118px;
+    }
+  }
 }
 
 .add-product__text {
@@ -51,17 +136,22 @@
   color: $white;
   text-align: center;
 
-  &::before {
-    content: "";
-    position: absolute;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 70px;
+    padding-top: 73px;
+    padding-right: 120px;
+    display: flex;
+    margin-left: auto;
 
-    top: 65px;
-    left: 50%;
+    width: 285px;
 
-    margin-left: -27px;
-    display: block;
-    width: 55px;
-    height: 60px;
-    background: url("../img/icon-gift.svg") no-repeat;
+    text-align: left;
+
+    &::before {
+      left: 90px;
+
+      margin-left: 0;
+    }
   }
 }

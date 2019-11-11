@@ -164,26 +164,9 @@
 }
 
 .intro__link {
-  display: block;
-
   margin: 0 auto;
-  padding: 11px 20px;
 
   width: 280px;
-
-  background-color: $green;
-  color: $white;
-  text-transform: uppercase;
-  vertical-align: top;
-  text-align: center;
-
-  &:hover {
-    background-color: #5eaa2f;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
