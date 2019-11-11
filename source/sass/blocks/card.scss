@@ -74,6 +74,11 @@
 
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .card__title {
@@ -147,6 +152,12 @@
 
         width: 60px;
       }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--last {
+      margin-bottom: 28px;
     }
   }
 }
