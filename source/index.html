@@ -21,7 +21,7 @@
     </div>
     <header class="header container">
       <nav class="main-nav" id="nav">
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper color">
           <div class="main-nav__item">
             <a class="main-nav__logo">
               <span class="visually-hidden">cat-energy</span>
@@ -35,7 +35,7 @@
               <span>Показать главное меню</span>
             </button>
           </div>
-          <ul class="main-nav__list site-list color">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active">Главная</a>
             </li>
@@ -62,7 +62,10 @@
     <footer class="footer">
       <div class="footer-contact__wrapper">
         <!-- footer-contact -->
-        <include src="source/templates/footer-contact.html"></include>
+        <div class="footer-contact">
+          <p class="footer-contact__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="footer-contact__address"><span>ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</p>
+        </div>
       </div>
       <!-- footer-map -->
       <include src="source/templates/footer-map.html"></include>

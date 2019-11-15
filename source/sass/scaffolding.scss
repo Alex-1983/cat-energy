@@ -101,11 +101,6 @@ textarea {
 
 svg {
 
-  a &,
-  button & {
-    pointer-events: none; // Мы любим Edge, это браузер! (почти)
-  }
-
   &:not(:root) {
     overflow: hidden; // Скрыть выступающее за границы в IE
   }
@@ -135,8 +130,8 @@ hr {
   box-sizing: content-box; // Проблема Firefox
   height: 0;               // Проблема Firefox
   overflow: visible;       // Проблема Edge и IE
-  margin-top: $typo-margin-vertical * 2;
-  margin-bottom: $typo-margin-vertical * 2;
+  margin-top: 1em * 2;
+  margin-bottom: 1em * 2;
   border: 0;
   border-top: 1px solid $border-color;
 }
@@ -154,12 +149,12 @@ h6 {
   line-height: 1.2;
 }
 
-h1 { font-size: $font-size-h1; }
-h2 { font-size: $font-size-h2; }
-h3 { font-size: $font-size-h3; }
-h4 { font-size: $font-size-h4; }
-h5 { font-size: $font-size-h5; }
-h6 { font-size: $font-size-h6; }
+h1 { font-size: 40px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 16px; }
 
 p,
 ul,
@@ -171,7 +166,7 @@ pre,
 address,
 figure {
   margin-top: 0;
-  margin-bottom: $typo-margin-vertical;
+  margin-bottom: 1em;
 }
 
 p {
@@ -215,12 +210,12 @@ li {
 
 // .small,
 small {
-  font-size: $font-size-sm;
+  font-size: 0.75em;
 }
 
 sub,
 sup {
-  font-size: $font-size-sm;
+  font-size: 0.75em;
 }
 
 b,
@@ -252,7 +247,7 @@ kbd {
 pre {
   display: block;
   width: 100%;
-  margin-bottom: $typo-margin-vertical;
+  margin-bottom: 1em;
   overflow-x: auto;
   tab-size: 2;
   background-color: rgba(#000, 0.08);

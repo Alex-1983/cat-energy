@@ -5,9 +5,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
 
     margin-left: auto;
     margin-top: 22px;
+
+    width: 516px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 890px;
   }
 }
 
@@ -28,15 +35,11 @@
 
 .site-list__item {
   @media (min-width: $tablet-width) {
-    margin-right: 35px;
+    margin-left: 35px;
 
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 35px;
   }
 }
 
@@ -88,6 +91,12 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 25px;
+  }
+}
+
+.color .site-list {
+  @media (min-width: $desktop-width) {
+    width: 580px;
   }
 }
 

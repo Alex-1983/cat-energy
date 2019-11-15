@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -49,13 +49,19 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-right: 77px;
+    margin-bottom: 20px;
     padding-top: 78px;
     padding-left: 54px;
+
 
     width: 570px;
 
     &:nth-child(2n) {
       margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 20px;
     }
   }
 }
@@ -74,6 +80,8 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
 
+    max-width: 300px;
+
     font-size: 36px;
     line-height: 37px;
   }
@@ -81,13 +89,15 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 72px;
     padding-left: 160px;
+
+    max-width: 450px;
   }
 }
 
 .product__text {
   margin: 0;
-  margin-bottom: 24px;
   padding: 0;
+  padding-bottom: 24px;
 
   min-height: 85px;
 
@@ -96,14 +106,19 @@
   font-size: 14px;
   line-height: 18px;
 
+  border-bottom: 1px solid #d9d9d9;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
+    padding-bottom: 0;
 
     width: 63%;
     min-height: 90px;
 
     font-size: 16px;
     line-height: 24px;
+
+    border: none;
 
     &--pro {
       width: 56%;
@@ -125,13 +140,13 @@
   margin: 0;
   padding: 20px 0;
 
+  width: 100px;
+
 
   font-size: 16px;
   line-height: 16px;
   color: $grey-400;
   text-transform: uppercase;
-
-  border-top: 1px solid #d9d9d9;
 
   &:active {
     opacity: 0.3;
@@ -165,7 +180,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 250px;
+    width: 110px;
 
     font-size: 20px;
     line-height: 20px;

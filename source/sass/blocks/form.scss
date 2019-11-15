@@ -1,0 +1,381 @@
+.form__registration-wrapper {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.form {
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.form__fieldset-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 66px;
+  }
+}
+
+.form__registration {
+  padding: 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.form__registration-item {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__label-registration {
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.form__control-registration {
+  padding: 17px 12px 13px;
+
+  width: 100%;
+
+  background-color: $white;
+
+  border: 2px solid $grey-200;
+  border-radius: 2px;
+  outline: 0;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: $text-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 12px 13px 20px;
+  }
+}
+
+.form__control-registration::placeholder {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.form__contacts-wrapper {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
+}
+
+.form__contacts-container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form__contacts {
+  padding: 0 20px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.form__contacts-title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  width: 72%;
+  min-height: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+    margin-left: -40px;
+
+    width: auto;
+  }
+}
+
+.form__contacts-item {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+
+    width: 570px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.form__label-contacts {
+  flex-shrink: 0;
+
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 15px;
+
+    &--mail {
+      margin-right: 20px;
+    }
+  }
+}
+
+.form__control-contacts {
+  padding-right: 40px;
+
+  width: 100%;
+
+  border: 2px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+  }
+}
+
+.form__control-contacts::placeholder {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.form__contacts-icon-mail,
+.form__contacts-icon-phone {
+  fill: $grey-400;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+
+  transform: translateY(-50%);
+
+  @media (min-width: $desktop-width) {
+    right: 20px;
+  }
+}
+
+.form__contacts-icon-phone {
+  right: 14px;
+
+  @media (min-width: $desktop-width) {
+    right: 20px;
+  }
+}
+
+.form__control-contacts:hover ~ .form__contacts-icon-mail,
+.form__control-contacts:hover ~ .form__contacts-icon-phone,
+.form__control-contacts:focus ~ .form__contacts-icon-mail,
+.form__control-contacts:focus ~ .form__contacts-icon-phone {
+  fill: $green;
+}
+
+
+.form__control-contacts:focus:invalid ~ .form__contacts-icon-mail,
+.form__control-contacts:focus:invalid ~ .form__contacts-icon-phone {
+  fill: #ff8282;
+}
+
+.form__textarea-wrapper {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 20px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    padding: 0;
+  }
+}
+
+.form__title-textarea {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
+}
+
+.form__control-textarea {
+  padding: 10px 10px;
+
+  width: 100%;
+  min-height: 150px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color;
+  text-transform: uppercase;
+
+  border: 2px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    min-height: 175px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__checkbox-wrapper {
+  margin: 0;
+  margin-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.form__btn-container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 70px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+
+.form__button {
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 65px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 45%;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.form__text {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-family-secondary;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 44.5%;
+
+    font-size: 16px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}

@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     padding: 0 30px 505px;
 
     width: 100%;
@@ -101,12 +101,13 @@
   margin: 0 auto 20px;
   padding: 0;
 
+  width: 280px;
   min-height: 75px;
 
   font-weight: 400;
   font-size: 36px;
-  color: $white;
   line-height: 36px;
+  color: $white;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -116,7 +117,7 @@
 
     font-size: 60px;
     line-height: 60px;
-    color: $black;
+    color: $grey-400;
   }
 }
 
@@ -132,11 +133,11 @@
     margin-bottom: 50px;
     margin-left: 3px;
 
-    width: 450px;
+    width: 295px;
 
     font-size: 20px;
     line-height: 20px;
-    color: $black;
+    color: $grey-400;
   }
 
   @media (min-width: $desktop-width) {
@@ -164,9 +165,10 @@
 }
 
 .intro__link {
-  margin: 0 auto;
-
   width: 280px;
+
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

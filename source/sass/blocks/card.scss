@@ -14,7 +14,7 @@
   @media (min-width: $tablet-width) {
     width: auto;
     padding: 0;
-    background: linear-gradient(to bottom, #fff 85px, #f2f2f2 85px);
+    background: linear-gradient(to bottom, #ffffff 85px, #f2f2f2 85px);
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +33,7 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
 
     width: 100%;
   }
@@ -174,7 +174,7 @@
   }
 }
 
-.table-card {
+.card__table {
   margin: 0;
   font-family: $font-family-secondary;
   font-size: 12px;
@@ -191,18 +191,21 @@
   }
 }
 
-.table-card td {
+.card__table .card__table-cell {
   padding: 0;
   vertical-align: top;
+  width: 70px;
+
+  &--last {
+    width: 70px;
+
+    text-align: right;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 7px 0;
     border-bottom: 1px solid #cdcdcd;
   }
-}
-
-.table-card td:last-child {
-  text-align: right;
 }
 
 .card__text {
@@ -228,10 +231,19 @@
     font-size: 16px;
 
     &--last {
-      margin-bottom: 86px;
+      margin-bottom: 20px;
+
+      min-height: 100px;
 
       width: 200px;
     }
+  }
+}
+
+.card__buy-link {
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -283,6 +295,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+
     width: 170px;
   }
 }

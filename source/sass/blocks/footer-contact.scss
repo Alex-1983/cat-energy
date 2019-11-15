@@ -17,8 +17,6 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 44px;
-    padding-right: 44px;
     padding: 65px 70px 56px;
   }
 
@@ -29,6 +27,16 @@
     min-height: 200px;
 
     background-color: $white;
+  }
+
+  &--catalog {
+    background-color: $grey-100;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 60px;
+
+      background-color: $white;
+    }
   }
 }
 
