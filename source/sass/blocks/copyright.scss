@@ -42,8 +42,8 @@
 
 .copyright__icon {
   fill: #666666;
+}
 
-  &:hover {
-    fill: #68b738;
-  }
+.copyright:hover .copyright__icon {
+  fill: #68b738;
 }
