@@ -31,8 +31,15 @@ gulp.task("css", function() {
     .pipe(gulp.dest("build/css"));
 });
 
+
+gulp.task("libs_js", function () {
+  return gulp.src("source/libs_js/**/*.js")
+  .pipe(uglify())
+  .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("scripts", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/*js")
   .pipe(concat("app.min.js"))
   .pipe(uglify())
   .pipe(gulp.dest("build/js"));
@@ -96,8 +103,9 @@ gulp.task("build", gulp.series(
   "copy",
   "sprite",
   "css",
+  "libs_js",
   "scripts",
-  "html",
+  "html"
 ));
 
 gulp.task("server", function() {
@@ -107,6 +115,7 @@ gulp.task("server", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/sprite/*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/libs_js/**/*.js", gulp.series("libs_js", "refresh"));
   gulp.watch("source/**/*.js", gulp.series("scripts", "refresh"));
   gulp.watch("source/**/*.html", gulp.series("html", "refresh"));
 });
