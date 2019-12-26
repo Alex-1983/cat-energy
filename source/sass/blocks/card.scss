@@ -99,8 +99,8 @@
   &--last {
     position: relative;
 
-    margin: 0 auto 5px;
-    padding-top: 80px;
+    margin: 0 auto 10px;
+    padding-top: 77px;
 
     width: 210px;
     text-align: center;
@@ -284,6 +284,7 @@
 .card-last__buy {
   background-color: $grey-100;
   color: $text-color;
+  letter-spacing: 1px;
 
   &:hover {
     background-color: #ebebeb;

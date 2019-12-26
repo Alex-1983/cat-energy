@@ -4,7 +4,7 @@
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 35px 27px;
+    padding: 23px 37px 27px;
 
     &--last {
       border-bottom: 1px solid #cdcdcd;
@@ -25,24 +25,33 @@
   border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100%;
-
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    align-items: center;
-
     margin: 0;
 
     width: 615px;
   }
 }
 
-.add-card__table th {
+.add-card__sm {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.add-card__md {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+
+    vertical-align: middle;
+  }
+}
+
+.add-card__table-head {
   margin: 0;
   padding: 0;
   padding-bottom: 13px;
@@ -59,15 +68,17 @@
     font-size: 20px;
     line-height: 20px;
 
-    width: 345px;
+    width: 50%;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 5px;
+
     width: 325px;
   }
 }
 
-.add-card__table td {
+.add-card__field {
   padding: 0;
   padding-bottom: 15px;
 
@@ -80,37 +91,44 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
     padding-left: 0;
-    padding-top: 3px;
+    padding-top: 5px;
+
+    width: 70%;
 
     font-size: 16px;
     line-height: 20px;
+
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 12px;
+
+    width: 235px;
+
     text-align: left;
-  }
-}
-
-.add-card__field {
-  width: 50%;
-
-  @media (min-width: $tablet-width) {
-    width: 245px;
-
-    text-align: right;
   }
 }
 
 .add-card__value {
   width: 50%;
 
+  font-family: $font-family-secondary;
+  vertical-align: top;
   text-align: right;
 
   @media (min-width: $tablet-width) {
-    width: 95px;
+    padding-top: 5px;
+
+    width: 30%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 45px;
+    padding-top: 12px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    width: 50px;
   }
 }
