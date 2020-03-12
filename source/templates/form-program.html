@@ -10,7 +10,7 @@
           <legend class="visually-hidden">Персональные данные</legend>
           <p class="form__registration-item">
             <label class=" form-label form__label-registration" for="name">Имя:*</label>
-            <input class="form-control form__control-registration" id="name" type="text" name="name" placeholder="Барсик" required>
+            <input class="form-control form__control-registration" id="name" type="text" name="name" placeholder="Барсик" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required>
           </p>
           <p class="form__registration-item">
             <label class=" form-label form__label-registration" for="weight">Вес (кг):*</label>
@@ -42,7 +42,7 @@
         <div class="form__contacts-container">
           <p class="form__contacts-item">
             <label class="form-label form__label-contacts form__label-contacts--mail" for="mail">E-mail:*</label>
-            <input class="form-control form__control-contacts" id="mail" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
+            <input class="form-control form__control-contacts" id="mail" type="email" name="mail" placeholder="kuklachev@gmail.com" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" autocomplete="on" required>
             <span class="form__contacts-icon-mail">
               <svg class="form__icon-mail" width="17" height="13">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>

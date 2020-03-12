@@ -13,8 +13,6 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
-var concat = require("gulp-concat");
-var uglify = require("gulp-uglifyjs");
 var htmlmin = require("gulp-htmlmin");
 var server = require("browser-sync").create();
 
@@ -31,17 +29,8 @@ gulp.task("css", function() {
     .pipe(gulp.dest("build/css"));
 });
 
-
-gulp.task("libs_js", function () {
-  return gulp.src("source/libs_js/**/*.js")
-  .pipe(uglify())
-  .pipe(gulp.dest("build/js"));
-});
-
 gulp.task("scripts", function () {
-  return gulp.src("source/js/*js")
-  .pipe(concat("app.min.js"))
-  .pipe(uglify())
+  return gulp.src("source/js/*.js")
   .pipe(gulp.dest("build/js"));
 
 });
@@ -87,7 +76,8 @@ gulp.task("webp", function() {
 gulp.task("copy", function() {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/**"
+      "source/img/**",
+       "source/libs/**/*"
     ], {
       base: "source"
     })
@@ -103,9 +93,8 @@ gulp.task("build", gulp.series(
   "copy",
   "sprite",
   "css",
-  "libs_js",
   "scripts",
-  "html"
+  "html",
 ));
 
 gulp.task("server", function() {
@@ -115,7 +104,6 @@ gulp.task("server", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/sprite/*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/libs_js/**/*.js", gulp.series("libs_js", "refresh"));
   gulp.watch("source/**/*.js", gulp.series("scripts", "refresh"));
   gulp.watch("source/**/*.html", gulp.series("html", "refresh"));
 });

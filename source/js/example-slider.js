@@ -1,3 +1,5 @@
+'use strict';
+
 (function() {
   var PERCENT_MAX = 100;
   var exampleImage = document.querySelector(".example__image--1");
